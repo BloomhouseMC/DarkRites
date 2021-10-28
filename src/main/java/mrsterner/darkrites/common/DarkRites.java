@@ -1,6 +1,6 @@
-package devarcana.darkrites.common;
+package mrsterner.darkrites.common;
 
-import devarcana.darkrites.common.registry.DRRitualFunctions;
+import mrsterner.darkrites.common.registry.DRRitualFunctions;
 import ladysnake.requiem.api.v1.RequiemApi;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;

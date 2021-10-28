@@ -1,7 +1,6 @@
-package devarcana.darkrites.common.ritualfunction;
+package mrsterner.darkrites.common.ritualfunction;
 
 import ladysnake.requiem.api.v1.RequiemPlayer;
-import ladysnake.requiem.api.v1.possession.PossessionComponent;
 import ladysnake.requiem.api.v1.remnant.RemnantComponent;
 import moriyashiine.bewitchment.api.BewitchmentAPI;
 import moriyashiine.bewitchment.api.registry.RitualFunction;
@@ -11,15 +10,11 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventory;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
-
-import java.util.HashSet;
-import java.util.Set;
 
 public class DecayRitualFunction extends RitualFunction {
     public DecayRitualFunction() {
@@ -44,7 +39,7 @@ public class DecayRitualFunction extends RitualFunction {
                 RequiemPlayer player = (RequiemPlayer) livingEntity;
                 RemnantComponent remnant = RemnantComponent.get((PlayerEntity) player);
 
-                if (remnant.getRemnantType().isDemon() && !player.asPossessor().isPossessing()) {
+                if (remnant.getRemnantType().isDemon() && !player.asPossessor().isPossessionOngoing()) {
                     MobEntity body;
 
                     if (inventory.count(Items.BONE) > 0) {

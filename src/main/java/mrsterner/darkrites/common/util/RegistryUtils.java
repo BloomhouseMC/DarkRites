@@ -1,6 +1,6 @@
-package devarcana.darkrites.common.util;
+package mrsterner.darkrites.common.util;
 
-import devarcana.darkrites.common.DarkRites;
+import mrsterner.darkrites.common.DarkRites;
 import net.minecraft.util.registry.Registry;
 
 public class RegistryUtils {

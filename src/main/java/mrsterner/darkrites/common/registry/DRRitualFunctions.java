@@ -1,7 +1,7 @@
-package devarcana.darkrites.common.registry;
+package mrsterner.darkrites.common.registry;
 
-import devarcana.darkrites.common.ritualfunction.DecayRitualFunction;
-import devarcana.darkrites.common.util.RegistryUtils;
+import mrsterner.darkrites.common.ritualfunction.DecayRitualFunction;
+import mrsterner.darkrites.common.util.RegistryUtils;
 import moriyashiine.bewitchment.api.registry.RitualFunction;
 import moriyashiine.bewitchment.common.registry.BWRegistries;
 

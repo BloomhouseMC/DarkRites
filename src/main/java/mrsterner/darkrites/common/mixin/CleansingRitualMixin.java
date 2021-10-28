@@ -1,4 +1,4 @@
-package devarcana.darkrites.common.mixin;
+package mrsterner.darkrites.common.mixin;
 
 import ladysnake.requiem.api.v1.RequiemPlayer;
 import ladysnake.requiem.api.v1.remnant.RemnantComponent;
@@ -35,7 +35,7 @@ public class CleansingRitualMixin {
             if (livingEntity instanceof RequiemPlayer) {
                 RequiemPlayer player = (RequiemPlayer) livingEntity;
 
-                if (player.asPossessor().isPossessing()) {
+                if (player.asPossessor().isPossessionOngoing()) {
                     RemnantComponent remnant = RemnantComponent.get((PlayerEntity) player);
                     remnant.curePossessed(player.asPossessor().getPossessedEntity());
                 }
