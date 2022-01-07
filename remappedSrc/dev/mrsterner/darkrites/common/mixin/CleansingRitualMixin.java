@@ -1,4 +1,4 @@
-package mrsterner.darkrites.common.mixin;
+package dev.mrsterner.darkrites.common.mixin;
 
 import ladysnake.requiem.api.v1.RequiemPlayer;
 import ladysnake.requiem.api.v1.remnant.RemnantComponent;

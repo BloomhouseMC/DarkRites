@@ -18,7 +18,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "mrsterner.darkrites.common.DarkRites"
+      "dev.mrsterner.darkrites.common.DarkRites"
     ]
   },
   "mixins": [
