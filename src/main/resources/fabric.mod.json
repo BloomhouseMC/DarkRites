@@ -32,10 +32,10 @@
   },
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.11.0",
     "fabric": "*",
-    "minecraft": "1.17.x",
-    "bewitchment": ">=1.17-1",
+    "minecraft": "1.18.x",
+    "bewitchment": ">=1.18-1",
     "requiem": ">=1.5.1"
   },
   "suggests": {

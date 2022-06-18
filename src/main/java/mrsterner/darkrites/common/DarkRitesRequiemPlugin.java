@@ -2,7 +2,7 @@ package mrsterner.darkrites.common;
 
 import ladysnake.requiem.api.v1.RequiemPlugin;
 import ladysnake.requiem.api.v1.event.requiem.PossessionStartCallback;
-import moriyashiine.bewitchment.common.entity.component.FamiliarComponent;
+import moriyashiine.bewitchment.common.registry.BWComponents;
 import net.minecraft.nbt.NbtCompound;
 
 public class DarkRitesRequiemPlugin implements RequiemPlugin {
@@ -13,7 +13,7 @@ public class DarkRitesRequiemPlugin implements RequiemPlugin {
             target.saveSelfNbt(entityTag);
 
             if (entityTag.contains("Owner") && possessor.getUuid().equals(entityTag.getUuid("Owner"))) {
-                if (FamiliarComponent.get(target).isFamiliar()) {
+                if (BWComponents.FAMILIAR_COMPONENT.get(target).isFamiliar()) {
                     return PossessionStartCallback.Result.ALLOW;
                 }
             }
